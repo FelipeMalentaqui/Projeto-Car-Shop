@@ -3,6 +3,8 @@ import CarController from '../Controllers/CarController';
 
 const routes = Router();
 
-routes.post('/cars', (req, res) => new CarController(req, res).createCar());
+routes.post('/cars', (req, res, next) => new CarController(req, res, next).createCar());
+routes.get('/cars', (req, res, next) => new CarController(req, res, next).getAllCars());
+routes.get('/cars/:id', (req, res, next) => new CarController(req, res, next).getById());
 
 export default routes;
