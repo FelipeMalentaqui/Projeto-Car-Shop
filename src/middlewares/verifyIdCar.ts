@@ -8,11 +8,6 @@ const verifyCar = (req: Request, res: Response, next: NextFunction) => {
     throw new Error('Car not found');
   }
 
-  if (id === undefined || id === null) {
-    // return res.status(422).json({ message: 'Invalid mongo id' });
-    throw new Error('Invalid mongo id');
-  }
-
   next();
 };
 

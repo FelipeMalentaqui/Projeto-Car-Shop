@@ -1,9 +1,9 @@
 class ErrorInvalid extends Error {
   public statusCode: number;
 
-  constructor(message: string) {
+  constructor(message: string, status:number) {
     super(message);
-    this.statusCode = 422;
+    this.statusCode = status;
   }
 }
 
