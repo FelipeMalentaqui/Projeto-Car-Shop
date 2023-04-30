@@ -1,5 +1,5 @@
 import { Model, Schema, model, models } from 'mongoose';
-import IMotorcycles from '../Interfaces/IMotorcycles';
+import IMotorcycles from '../Interfaces/IMotorcycle';
 // import ErrorInvalid from '../Errors/error.invalid';
 
 class MotorcyclesODM {

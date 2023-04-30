@@ -1,4 +1,4 @@
-interface IMotorcycles {
+interface IMotorcycle {
   id?: string;
   model: string;
   year: number;
@@ -9,4 +9,4 @@ interface IMotorcycles {
   engineCapacity: number;
 }
 
-export default IMotorcycles;
+export default IMotorcycle;
