@@ -1,12 +1,12 @@
 import IMotorcycles from '../Interfaces/IMotorcycle';
-import Motorcycles from '../Domains/Motorcycles';
+import Motorcycle from '../Domains/Motorcycle';
 import MotorcyclesODM from '../Models/MotorcyclesODM';
 // import AbstractODM from '../Models/AbstractODM';
 
 class MotorcyclesService {
-  private createMotorcyclesDomain(motorcycles: IMotorcycles | null): Motorcycles | null {
+  private createMotorcyclesDomain(motorcycles: IMotorcycles | null): Motorcycle | null {
     if (motorcycles) {
-      return new Motorcycles(motorcycles);
+      return new Motorcycle(motorcycles);
     }
     return null;
   }

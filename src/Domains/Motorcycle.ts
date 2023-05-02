@@ -1,13 +1,7 @@
 import IMotorcycles from '../Interfaces/IMotorcycle';
 import Vehicle from './Vehicle';
 
-class Motorcycles extends Vehicle {
-  protected id: string | undefined;
-  protected model: string;
-  protected year: number;
-  protected color: string;
-  protected status: boolean | undefined; 
-  protected buyValue: number;
+class Motorcycle extends Vehicle {
   private category: string;
   private engineCapacity: number;
 
@@ -24,7 +18,7 @@ class Motorcycles extends Vehicle {
   }
 }
 
-export default Motorcycles;
+export default Motorcycle;
 
 /*
 import IMotorcycles from '../Interfaces/IMotorcycle';
