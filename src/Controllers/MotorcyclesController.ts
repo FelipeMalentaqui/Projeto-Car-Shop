@@ -32,22 +32,22 @@ class Motorcycles {
     return this.res.status(201).json(newMotorcycles);
   }
 
-  // public async getAllMotorcycles() {
-  //   const cars = await this.service.getAllMotorcycles();
+  public async getAll() {
+    const cars = await this.service.getAll();
 
-  //   return this.res.status(200).json(cars);
-  // }
+    return this.res.status(200).json(cars);
+  }
 
-  // public async getById() {
-  //   try {
-  //     const { id } = this.req.params;
-  //     const idMotorcycles = await this.service.getById(id);
+  public async getById() {
+    try {
+      const { id } = this.req.params;
+      const idMotorcycles = await this.service.getById(id);
   
-  //     return this.res.status(200).json(idMotorcycles);
-  //   } catch (error) {
-  //     this.next(error);
-  //   }
-  // }
+      return this.res.status(200).json(idMotorcycles);
+    } catch (error) {
+      this.next(error);
+    }
+  }
 }
 
 export default Motorcycles;
