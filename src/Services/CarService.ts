@@ -7,11 +7,7 @@ import CarODM from '../Models/CarODM';
 
 class CarService {
   private createCarDomain(car: ICar | null): Car | null {
-    // console.log(car);
-    
     if (car) {
-      // console.log(car.id, 'IDDD');
-      
       return new Car(car);
     }
     return null;
